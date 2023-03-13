@@ -20,10 +20,13 @@
 	let startSending: any;
 
 	onMount(() => {
-		let peer: Peer = new Peer({
-			host: '/',
-			port: 5000
-		});
+		let peer: Peer = new Peer();
+
+		// Use when running on node server with custom peer server
+		// let peer: Peer = new Peer({
+		// 	host: '/',
+		// 	port: 5000
+		// });
 
 		peer.on('open', function (id) {
 			senderPeerId = id;

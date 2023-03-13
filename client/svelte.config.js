@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-node';
+// import nodeAdapter from '@sveltejs/adapter-node';    // Use when running on node server with custom peer server
+import netlifyAdapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -8,7 +9,8 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		// adapter: nodeAdapter()     // Use when running on node server with custom peer server
+		adapter: netlifyAdapter()
 	}
 };
 
