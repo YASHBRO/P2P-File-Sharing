@@ -3,7 +3,7 @@
 
 This is a peer to peer file sharing app that allows users to transfer files directly between two devices without the need for a centralized server. The app uses SvelteKit, WebRTC, PeerJS, Tailwind, Node, ExpressJS, and TypeScript.
 
-#### Site live @ [___p2p-file-sharing-yashbro.netlify.app___](https://p2p-file-sharing-yashbro.netlify.app)
+#### Site live @ [___p2p-file-transfering.netlify.app___](https://p2p-file-transfering.netlify.app)
 
 ## Features
 
